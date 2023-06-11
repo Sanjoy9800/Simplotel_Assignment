@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Restaurant</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="navbar-logo">
+        <img
+          src="https://fsymbols.com/images/phone-icon.png"
+          alt="Call Symbol"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/009/157/893/small/shopping-cart-set-of-shopping-cart-icon-on-white-background-shopping-cart-icon-shopping-cart-design-shopping-cart-icon-sign-shopping-cart-icon-isolated-shopping-cart-symbol-free-vector.jpg"
+          alt="Cart Symbol"
+        />
+      </div>
+      <img src="./image/menu-btn.png" alt="name" class="menu-btn">
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <h2>LOREM IPSUM</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          rerum maiores quisquam quam facere ea harum animi. Officia quam eius
+          illo, quia nam, eaque modi fugiat perferendis, dolor repudiandae
+          pariatur
+        </p>
+      </div>
+    </header>
+    
+
+    <section>
+      <div class="parent">
+        <div class="container">
+          <h3>Order Now</h3>
+        </div>
+        
+        <div class="chiled">
+          <img src="./image/img4.jpg" alt="img">
+          <H4>BURGER</H4>
+          <p>Lorem Ipsum has been the
+            industry's standard dummy text</p>
+        </div>
+        <div class="chiled">
+          <img src="./image/img2.jpg" alt="img">
+          <H4>PIZZA</H4>
+          <p>Lorem Ipsum has been the
+            industry's standard dummy text</p>
+        </div>
+        <div class="chiled">
+          <img src="./image/img3.jpg" alt="img">
+          <H4>PASTA</H4>
+          <p>Lorem Ipsum has been the
+            industry's standard dummy text</p>
+        </div>
+        <div class="ord">
+          <button class="btn">Order</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <script>
+      const mentBtn = document.querySelector('.menu-btn')
+      const navLinks = document.querySelector('.navbar')
+      mentBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('mobile-menu')
+      })
+  </script>
+  </body>
+</html>
